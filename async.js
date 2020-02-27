@@ -3,7 +3,7 @@ const fetch = require('node-fetch');
 const getPeoplePromise = fetch => {
     return fetch('https://swapi.co/api/people')
         .then(response => response.json())
-        .then(date => {
+        .then(data => {
             return {
                 count: data.count,
                 results: data.results
